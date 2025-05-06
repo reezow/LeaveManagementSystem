@@ -10,6 +10,7 @@ namespace LeaveManagementSystem.Web.MappingProfiles
         {
             CreateMap<LeaveType, LeaveTypeReadOnlyViewModel>();
             CreateMap<LeaveTypeCreateViewModel, LeaveType>();
+            CreateMap<LeaveTypeEditViewModel, LeaveType>().ReverseMap();
         }
     }
 }
